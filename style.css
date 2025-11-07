@@ -85,3 +85,12 @@ footer {
         transform: translateY(0); /* End at normal position */
     }
 }
+
+/* --- NEW: Image Styling --- */
+main img {
+    max-width: 100%; /* This is the magic! Makes image responsive */
+    height: auto;    /* Keeps the aspect ratio correct */
+    border-radius: 8px; /* Matches our container's rounded corners */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
