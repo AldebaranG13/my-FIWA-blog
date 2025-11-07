@@ -1,7 +1,4 @@
 body {
-    /* THIS IS THE CHANGE: 
-      We replaced 'Arial' with 'Mada'
-    */
     font-family: 'Mada', sans-serif;
     margin: 0;
     padding: 0;
@@ -10,12 +7,15 @@ body {
 }
 
 .container {
-    max-width: 800px; /* This stops it from looking weird on wide screens */
-    margin: 40px auto; /* This centers the content */
+    max-width: 800px; 
+    margin: 40px auto; 
     padding: 20px;
-    background-color: #ffffff; /* White background for the content */
+    background-color: #ffffff; 
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    /* --- NEW: Add our fade-in animation --- */
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 header {
@@ -26,11 +26,13 @@ header {
 
 header h1 {
     margin: 0;
-    color: #1B365D; /* Our FIWA-inspired dark blue */
+    color: #1B365D; 
 }
 
 main h2 {
-    color: #3A7ECB; /* Our light blue */
+    /* --- CHANGED: Fix the "blending" --- */
+    /* Make the heading dark blue, not light blue */
+    color: #1B365D; 
 }
 
 footer {
@@ -42,7 +44,7 @@ footer {
     text-align: center;
 }
 
-/* This is for our future post list */
+/* --- POST LIST STYLING --- */
 #post-list {
     list-style: none;
     padding: 0;
@@ -56,9 +58,30 @@ footer {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    color: #3A7ECB;
+    color: #3A7ECB; /* Keep links light blue */
+    
+    /* --- NEW: Add a smooth transition --- */
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 #post-list a:hover {
     text-decoration: underline;
+    
+    /* --- NEW: Make the hover effect cooler --- */
+    color: #1B365D; /* Change to dark blue */
+    transform: translateX(5px); /* Nudge it to the right */
+}
+
+/* --- NEW: KEYFRAME ANIMATION ---
+  This defines the 'fadeIn' animation
+*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Start 10px lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at normal position */
+    }
 }
