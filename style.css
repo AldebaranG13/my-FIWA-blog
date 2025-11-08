@@ -44,6 +44,20 @@ footer {
     text-align: center;
 }
 
+/* --- NEW: General Link Style --- */
+/* This styles all links inside the <main> content */
+main a {
+    color: #3A7ECB; /* Our light blue */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+main a:hover {
+    color: #1B365D; /* Dark blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
 /* --- POST LIST STYLING --- */
 #post-list {
     list-style: none;
