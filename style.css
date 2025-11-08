@@ -44,6 +44,21 @@ footer {
     text-align: center;
 }
 
+/* --- THIS IS THE MISSING CODE --- 
+  It styles all links inside your main paragraphs
+*/
+main a {
+    color: #3A7ECB; /* Our light blue */
+    text-decoration: none; /* THIS REMOVES THE UNDERLINE */
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+main a:hover {
+    color: #1B365D; /* Dark blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
 /* --- NEW: Navigation Bar --- */
 nav {
     background-color: #f8f8f8; /* A very light gray background */
