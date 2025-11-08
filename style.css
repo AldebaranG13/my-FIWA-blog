@@ -44,18 +44,36 @@ footer {
     text-align: center;
 }
 
-/* --- NEW: General Link Style --- */
-/* This styles all links inside the <main> content */
-main a {
-    color: #3A7ECB; /* Our light blue */
-    text-decoration: none; /* Remove underline */
+/* --- NEW: Navigation Bar --- */
+nav {
+    background-color: #f8f8f8; /* A very light gray background */
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none; /* THIS REMOVES THE BULLETS */
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centers the links */
+}
+
+nav ul li {
+    display: inline-block; /* Makes links sit side-by-side */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none; /* THIS REMOVES THE UNDERLINE */
     font-weight: bold;
+    color: #3A7ECB; /* Light blue */
+    font-size: 1.1em;
     transition: color 0.2s ease;
 }
 
-main a:hover {
-    color: #1B365D; /* Dark blue on hover */
-    text-decoration: underline; /* Add underline on hover */
+nav ul li a:hover {
+    color: #1B365D; /* Dark blue */
 }
 
 /* --- POST LIST STYLING --- */
