@@ -141,3 +141,13 @@ main img {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/* --- NEW: For Tinkercad Embeds --- */
+.tinkercad-embed {
+    /* This sets the aspect ratio (725 / 453) */
+    aspect-ratio: 1.6 / 1;
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: matches your site style */
+    overflow: hidden;   /* Keeps the corners rounded */
+}
