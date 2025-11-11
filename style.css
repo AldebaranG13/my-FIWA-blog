@@ -4,6 +4,9 @@ body {
     padding: 0;
     background-color: #f4f4f4; 
     color: #333; 
+    
+    /* --- ADD THIS LINE --- */
+    line-height: 1.6; /* Adds space BETWEEN lines in a paragraph */
 }
 
 .container {
@@ -42,6 +45,13 @@ footer {
     font-size: 0.9em;
     color: #777;
     text-align: center;
+}
+
+/* --- ADD THIS NEW CODE ---
+  This targets all paragraphs in your main content
+*/
+main p {
+    margin-bottom: 20px; /* Adds a 20px space AFTER each paragraph */
 }
 
 /* --- THIS IS THE MISSING CODE --- 
