@@ -145,9 +145,9 @@ nav ul li a:hover {
 
 /* --- NEW: Image Styling --- */
 main img {
-    max-width: 100%; /* This is the magic! Makes image responsive */
+    width: 100%; /* <-- THIS IS THE FIX */
     height: auto;    /* Keeps the aspect ratio correct */
-    border-radius: 8px; /* Matches our container's rounded corners */
+    border-radius: 8px; 
     margin-top: 20px;
     margin-bottom: 20px;
 }
