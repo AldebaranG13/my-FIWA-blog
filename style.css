@@ -161,3 +161,42 @@ main img {
     border-radius: 8px; /* Optional: matches your site style */
     overflow: hidden;   /* Keeps the corners rounded */
 }
+
+/* --- NEW: Post Preview on Homepage --- */
+.post-preview {
+    /* Creates a nice separator line between posts */
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 20px; /* Space between text and the line */
+    margin-bottom: 20px;  /* Space after the line */
+}
+
+/* Make the post title big */
+.post-preview h3 {
+    margin-top: 0;
+    margin-bottom: 5px; /* Puts the date right under it */
+}
+
+/* Style the post title link */
+.post-preview h3 a {
+    color: #333; /* Dark, not purple */
+    text-decoration: none;
+    font-size: 1.5rem; /* Make the title bigger */
+}
+/* Make it light up with your theme color on hover */
+.post-preview h3 a:hover {
+    color: #8a2be2; 
+    text-decoration: underline;
+}
+
+/* Style the date text */
+.post-preview small {
+    display: block; /* Gives it its own line */
+    color: #777; /* Make it grey and less important */
+    margin-bottom: 10px;
+}
+
+/* Style the preview text */
+.post-preview p {
+    line-height: 1.5;
+    margin-bottom: 5px; /* Not as much space as a normal paragraph */
+}
